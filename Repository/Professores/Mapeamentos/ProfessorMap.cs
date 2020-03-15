@@ -11,7 +11,7 @@ namespace Escola.Repository.Professores.Mapeamentos
             builder.HasKey(e => e.Codigo)
             .HasName("PK_Escola_tblprofessores");
 
-            builder.ToTable("tblprofessores", "Escola");
+            builder.ToTable("tblprofessores", "dbo");
 
             builder.Property(e => e.Nome)
                 .IsRequired()

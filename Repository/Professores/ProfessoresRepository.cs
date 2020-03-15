@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Escola.Repository.DbContexts;
 using System.Threading.Tasks;
@@ -15,5 +17,8 @@ namespace Escola.Repository.Professores
 
         public async Task<Professor> Obter(int id)
             => await EscolaContext.Professor.FindAsync(id);
+
+        public async Task<IEnumerable<Professor>> Obter()
+            => await EscolaContext.Professor.ToListAsync();
     }
 }
