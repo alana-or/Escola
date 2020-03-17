@@ -11,6 +11,7 @@ namespace Escola.Services.Professores
     public interface IProfessorService
     {
         Task<IEnumerable<ProfessorModel>> BuscarProfessores();
+        Task<ProfessorModel> BuscarProfessor(int id);
     }
 
     public class ProfessorService : IProfessorService
@@ -29,6 +30,13 @@ namespace Escola.Services.Professores
             var professores = (await professoresRepository.Obter()).ToList();
 
             return mapper.Map<IEnumerable<Professor>, IEnumerable<ProfessorModel>>(professores);
+        }
+
+        public async Task<ProfessorModel> BuscarProfessor(int id)
+        {
+            var professores = await professoresRepository.Obter(id);
+
+            return mapper.Map<Professor, ProfessorModel>(professores);
         }
     }
 }

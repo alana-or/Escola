@@ -1,0 +1,11 @@
+﻿USE [Escola];
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Adriely Rodrigues');
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Alana Rodrigues');
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Ana Maria');
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Eric Rodrigues');
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Maria Silva');
+insert into [Escola].[dbo].tblprofessores (Nome) values ('José Rodrigues');
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Marta Rodrigues');
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Roberta Rodrigues');  
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Kaique Rodrigues');
+insert into [Escola].[dbo].tblprofessores (Nome) values ('Valdineia Rodrigues');
